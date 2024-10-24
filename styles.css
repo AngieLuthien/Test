@@ -1,0 +1,78 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF4500  ;
+    font-family: 'Arial', sans-serif;
+}
+
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #260f04;
+    font-family: 'Halloween Spooky', cursive, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ghost-container {
+    position: relative;
+}
+
+.ghost {
+    width: 100px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.ghost-body {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 0;
+}
+
+.ghost-eyes {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 30px;
+    width: 60px;
+    left: 20px;
+}
+
+.eye {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.ghost-mouth {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    top: 70px;
+    left: 35px;
+}
+
+.ghost:hover {
+    cursor: pointer;
+}
